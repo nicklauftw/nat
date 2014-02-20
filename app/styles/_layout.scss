@@ -1,0 +1,23 @@
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  #header-logo {
+    float: left;
+  }
+  #header-nav {
+    width: 260px;
+    float: right;
+  }
+  #header-search {
+    width: 100%;
+    font-size: 12px;
+  }
+  .header-links { margin-top: 15px;}
+}
+
+.main-content { background-color: #fff; }
+
+nav {
+  margin-bottom: 40px;
+  overflow: auto;
+}

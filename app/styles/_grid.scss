@@ -1,0 +1,38 @@
+// Grid 1000px wide
+
+$container-width: 1000px;
+$max-col: 10;
+
+.padding-l-r-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: $container-width;
+}
+
+.row {
+  @extend .clearfix;
+  // @extend .padding-l-r-10;
+}
+
+@function calc-width($cols-count) {
+  @return $container-width / $max-col * $cols-count;
+}
+
+.col {
+  float: left;
+  position: relative;
+  @extend .padding-l-r-10;
+}
+
+.col-2-10 { width: calc-width(2); }
+
+.col-3-10 { width: calc-width(3); }
+
+.col-5-10 { width: calc-width(5); }
+
+.col-7-10 { width: calc-width(7); }
+

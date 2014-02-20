@@ -1,0 +1,55 @@
+// Header
+#header-logo {
+  display: block;
+  width: 270px;
+  height: 85px;
+  background: url('../images/logo.png') no-repeat;
+  text-indent: -9999px;
+}
+
+#header-nav {
+  padding-top: 20px;
+  #header-search {
+    background: url('../images/sprite/icon-search.png') no-repeat right 10px center #fff;
+  }
+  a {
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #fff;
+    font-size: 12px;
+    border-left: 1px solid #fff;
+    text-decoration: none;
+  }
+  a:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+  a:hover, a:focus {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.menu {
+  li {
+    float: left;
+    width: (100% / 6);
+  }
+  a {
+    display: block;
+    padding: 15px 0;
+    color: #282b2e;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    @extend .text-center;
+    @include gradient-vertical(#fefefe, #f0f0f0, 0%, 50%);
+  }
+  a:hover, a:focus {
+    @include gradient-vertical(#e1e3e6, #bdbdbd, 0%, 50%);
+  }
+  a.menu-item-active {
+    padding: 20px 0 15px;
+    border-bottom: 1px solid #fff;
+    @include gradient-vertical(#fff, #fff);
+  }
+}

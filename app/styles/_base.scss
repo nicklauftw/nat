@@ -1,0 +1,16 @@
+body {
+  background: url(../images/bg.jpg) no-repeat top 0 center fixed;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a { text-decoration: none; }
+
+input {
+  padding: 5px;
+  border: none;
+  -moz-box-shadow:    inset 0 0 8px #ccc;
+  -webkit-box-shadow: inset 0 0 8px #ccc;
+  box-shadow:         inset 0 0 8px #ccc;
+}
