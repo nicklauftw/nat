@@ -14,8 +14,15 @@ $max-col: 10;
 }
 
 .row {
+  margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   @extend .clearfix;
-  // @extend .padding-l-r-10;
+}
+
+.row-no-pad {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @function calc-width($cols-count) {
@@ -28,11 +35,13 @@ $max-col: 10;
   @extend .padding-l-r-10;
 }
 
-.col-2-10 { width: calc-width(2); }
+.col-2-10 { width: ( calc-width(2) - 5px ); }
 
-.col-3-10 { width: calc-width(3); }
+.col-3-10 { width: ( calc-width(3) - 5px ); }
 
-.col-5-10 { width: calc-width(5); }
+.col-5-10 { width: ( calc-width(5) - 5px ); }
 
-.col-7-10 { width: calc-width(7); }
+.col-7-10 { width: ( calc-width(7) - 5px ); }
+
+.col-8-10 { width: ( calc-width(8) - 5px ); }
 

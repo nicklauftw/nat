@@ -1,0 +1,62 @@
+.carousel > .carousel-slides {
+  width: 675px;
+  height: 335px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.carousel > .carousel-slides > li {
+  position: relative;
+  display: none;
+}
+
+.carousel img, .carousel a { display: block; }
+
+.carousel > .carousel-slides > .active-slide { display: block; }
+
+.carousel > .carousel-thumbs > li {
+    display: inline-block;
+    float: left;
+    padding-left: 11px;
+}
+
+.carousel > .carousel-thumbs > li:first-child { padding-left: 0; }
+
+.carousel > .carousel-thumbs > li > a {
+  position: relative;
+  width: 160px;
+  height: 80px;
+}
+
+.carousel > .carousel-thumbs > .active-slide-thumb > a {
+  border: 5px solid #0084d9;
+}
+
+.carousel > .carousel-thumbs > .active-slide-thumb > a > img {
+  width: 150px;
+  height: 70px;
+}
+
+.carousel > .carousel-thumbs > .active-slide-thumb > a:before {
+  position: absolute;
+  display: block;
+  top: -12px;
+  left: 70px;
+  content: '';
+  width: 12px;
+  height: 10px;
+  background: url('../../images/sprite/tri-up.png') no-repeat;
+/*  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #0084d9 transparent;*/
+  z-index: 9999;
+}
+
+.carousel > .carousel-slides .carousel-slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px 15px;
+  background-color: rgba(255, 255, 255, .66);
+}

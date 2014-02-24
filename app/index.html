@@ -10,11 +10,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-
-        <!-- endbower -->
-        <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
@@ -27,7 +22,7 @@
         <![endif]-->
 
         <div class="container">
-            <header class="row">
+            <header id="header-page" class="row">
                 <div id="header-logo">
                     <a href="/">
                         Crispin &amp; Mulberry - World Travelers
@@ -44,34 +39,83 @@
             </header>
 
             <div class="main-content">
-                <div class="row">
-                    <nav class="menu">
-                        <ul>
-                            <li>
-                                <a href="/">Destinations</a>
-                            </li>
-                            <li>
-                                <a href="/">Getaways</a>
-                            </li>
-                            <li>
-                                <a href="/">Travel Tips</a>
-                            </li>
-                            <li>
-                                <a href="/" class="menu-item-active">News &amp; Features</a>
-                            </li>
-                            <li>
-                                <a href="/">Contests</a>
-                            </li>
-                            <li>
-                                <a href="/">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="/">Destinations</a>
+                        </li>
+                        <li>
+                            <a href="/">Getaways</a>
+                        </li>
+                        <li>
+                            <a href="/">Travel Tips</a>
+                        </li>
+                        <li>
+                            <a href="/" class="menu-item-active">News &amp; Features</a>
+                        </li>
+                        <li>
+                            <a href="/">Contests</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div id="hero" class="row">
                     <div class="col col-7-10">
                         <div class="carousel">
-                            content
+                            <ul class="carousel-slides">
+                                <li class="active-slide">
+                                    <img src="images/slides/slide1.jpg" alt="" />
+                                    <div class="carousel-slide-caption">
+                                        <h2>DOWNTOWN BALTIMORE</h2>
+                                        Check out the USS Torsk at Baltimore’s historic Maritime Museum.
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slides/slide2.jpg" alt="" />
+                                    <div class="carousel-slide-caption">
+                                        <h2>EXPLORING THE VENETIAN</h2>
+                                        Enjoy the best gondola ride on this side of the Atlantic Ocean
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slides/slide3.jpg" alt="" />
+                                    <div class="carousel-slide-caption">
+                                        <h2>LONDON AFTER DARK</h2>
+                                        Enjoy the pubs along the river Thames & get spectacular view from the London Eye.
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slides/slide4.jpg" alt="" />
+                                    <div class="carousel-slide-caption">
+                                        <h2>MOUNT RUSHMORE</h2>
+                                        Marvel at the majestic beauty of the Black Hills and come face to face with American history.
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="carousel-thumbs">
+                                <li class="active-slide-thumb">
+                                    <a href="/">
+                                        <img src="images/slides/slide1-thumb.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <img src="images/slides/slide2-thumb.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <img src="images/slides/slide3-thumb.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <img src="images/slides/slide4-thumb.jpg" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -91,11 +135,11 @@
                 </div>
                 <div class="row">
                     <div class="module module-blue col col-2-10">
-                        <header>
-                            <h3>Browse Categories</h3>
+                        <header class="left">
+                            <h3><i class="browse"></i>Browse Categories</h3>
                         </header>
-                        <h4>Popular Destinations <i class="carret"></i></h4>
                         <ul>
+                            <h4>Popular Destinations <i class="carret"></i></h4>
                             <li>
                                 <a href="/">United States</a>
                             </li>
@@ -118,8 +162,8 @@
                                 <a href="/">All Destinations</a>
                             </li>
                         </ul>
-                        <h4>Getaways <i class="carret"></i></h4>
                         <ul>
+                            <h4>Getaways <i class="carret"></i></h4>
                             <li>
                                 <a href="/">Adventure Vacations</a>
                             </li>
@@ -151,24 +195,26 @@
                     </div>
                     <div class="module module-blue col col-5-10">
                         <header>
-                            <h3>Recent Articles <i class="carret"></i></h3>
+                            <h3><i class="article"></i>Recent Articles</h3>
                         </header>
                         <article>
-                            <img src="" alt="" />
-                            <h4>Don’t Miss the Parades at DisneyWorld</h4>
-                            <p>
-                                The parades at Disney World are a one of a kind celebration full of all your favorite Disney characters and music. The entertainment never stops as parades are scheduled throughout the entire day.
-                            </p>
+                            <a href="">
+                                <img src="images/articles/article1.jpg" alt="" />
+                                <h4>Don’t Miss the Parades at DisneyWorld</h4>
+                                <p>
+                                    The parades at Disney World are a one of a kind celebration full of all your favorite Disney characters and music. The entertainment never stops as parades are scheduled throughout the entire day.
+                                </p>
+                            </a>
                         </article>
                         <article>
-                            <img src="" alt="" />
+                            <img src="images/articles/article2.jpg" alt="" />
                             <h4>Get You Kicks in Downtown Las Vegas</h4>
                             <p>
                                 Get off the strip and check out what Old Vegas has to offer. From shark infested water slides to the nightly Fremont Street Experience it’s sure to please adventurers of all ages.
                             </p>
                         </article>
                         <article>
-                            <img src="" alt="" />
+                            <img src="images/articles/article3.jpg" alt="" />
                             <h4>Don’t Miss Deep Dish in Chicago</h4>
                             <p>
                                 Deep dish pizza is as synonymous with Chicago as Thin Crust is to New York. Any way you slice it, any trip to the windy city is incomplete without an italian flavor explosion in your mouth.
@@ -176,14 +222,15 @@
                         </article>
                     </div>
                     <div class="col col-3-10">
-                        <div class="module-grey">
+                        <div class="module module-grey">
                             <div class="module-inner">
                                 <header>
-                                    <h3>Sign Up For Our Newsletter</h3>
+                                    <h3><i class="mail"></i>Sign Up For Our Newsletter</h3>
                                 </header>
-                                <form id="newsletter-signup">
+                                <form id="newsletter-signup" method="">
                                     <input type="text" />
                                     <ul>
+                                        <i>Select the newsletters you’d like to receive</i>
                                         <li>
                                             <input type="checkbox" id="destinations" name="destinations" />
                                             <label for="destinations">Destinations &amp; Gateways</label>
@@ -193,7 +240,7 @@
                                             <label for="tips">Weekly Travel Tips</label>
                                         </li>
                                     </ul>
-                                    <a href="/" class="btn btn-blue">Sign Up</a>
+                                    <input type="submit" class="btn btn-blue push-right" value="SIGN UP" />
                                 </form>
                             </div>
                             <footer class="text-center">
@@ -203,27 +250,27 @@
                             </footer>
                         </div>
 
-                        <div class="module-grey">
+                        <div id="module-contests" class="module module-grey">
                             <div class="module-inner">
                                 <header>
-                                    <h3>Current Contests</h3>
+                                    <h3><i class="contest"></i>Current Contests</h3>
                                 </header>
                                 <ul>
                                     <li>
-                                        <img src="" alt="" />
-                                        <p>
-                                            <a href="">
-                                                Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia
-                                            </a>
-                                        </p>
+                                        <a href="">
+                                            <img src="images/contests/contest1.jpg" alt="" />
+                                            <p>
+                                                    Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia
+                                            </p>
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="" alt="" />
-                                        <p>
-                                            <a href="">
+                                        <a href="">
+                                            <img src="images/contests/contest2.jpg" alt="" />
+                                            <p>
                                                 Win a mystical trip to Bath that includes a guided tour of Stonehenge
-                                            </a>
-                                        </p>
+                                            </p>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -231,48 +278,50 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col col-7-10">
-                        <h3>Popular Videos</h3>
+                    <div class="module module-blue col col-7-10">
+                        <header class="left">
+                            <h3><i class="vid"></i>Popular Videos</h3>
+                        </header>
                         <ul id="pop-videos">
                             <li>
                                 <a href="/">
-                                    <img src="" alt="Team Mongoose"/>
+                                    <img src="images/vids_thumbs/team-mongoose.jpg" alt="Team Mongoose"/>
                                     <span class="btn-play"></span>
                                     <h5>Team Mongoose</h5>
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="" alt="St Paul's Cathedral"/>
+                                    <img src="images/vids_thumbs/stpaul-cath.jpg" alt="St Paul's Cathedral"/>
                                     <span class="btn-play"></span>
                                     <h5>St Paul's Cathedral</h5>
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="" alt="Hollywood and Highland"/>
+                                    <img src="images/vids_thumbs/hollywood.jpg" alt="Hollywood and Highland"/>
                                     <span class="btn-play"></span>
                                     <h5>Hollywood and Highland</h5>
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="" alt="Lake Wissota"/>
+                                    <img src="images/vids_thumbs/lake-wissota.jpg" alt="Lake Wissota"/>
                                     <span class="btn-play"></span>
                                     <h5>Lake Wissota</h5>
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="" alt="The Bellagio Fountains"/>
+                                    <img src="images/vids_thumbs/bellagio-fountains.jpg" alt="The Bellagio Fountains"/>
                                     <span class="btn-play"></span>
                                     <h5>The Bellagio Fountains</h5>
                                 </a>
                             </li>
                             <li>
                                 <a href="/">
-                                    <img src="" alt=""/>
-                                    <span class="btn-play">The Atlantic Coast</span>
+                                    <img src="images/vids_thumbs/atlantic-coast.jpg" alt=""/>
+                                    <span class="btn-play"></span>
                                     <h5>The Atlantic Coast</h5>
                                 </a>
                             </li>
@@ -287,8 +336,8 @@
                 </div>
             </div>
             <footer id="footer" class="row">
-                <div class="col col-8-10">
-                    <ul>
+                <div class="col col-7-10">
+                    <ul class="footer-nav">
                         <li>
                             <a href="/">Privacy Policy</a>
                         </li>
@@ -308,41 +357,31 @@
                         1640 Riverside Drive, Hill Valley, California, 95420
                     </p>
                 </div>
-                <div class="col col-2-10">
-                    <ul>
+                <div class="col col-3-10">
+                    <ul class="social-links">
                         <li>
-                            <a href="/">
-                                <img src="" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
+                            <a class="i-social-fb" href="/">
                                 Facebook
-                                <img src="" alt="Facebook" />
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a class="i-social-flickr" href="/">
                                 Flickr
-                                <img src="" alt="Flickr" />
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a class="i-social-twitter" href="https://twitter.com/CrispinMulberry" target="_blank">
                                 Twitter
-                                <img src="" alt="Twitter" />
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a class="i-social-vimeo" href="/">
                                 Vimeo
-                                <img src="" alt="Vimeo" />
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a class="i-social-rss" href="/">
                                 RSS
-                                <img src="" alt="RSS" />
                             </a>
                         </li>
                     </ul>
@@ -357,9 +396,8 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/plugins/carousel.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

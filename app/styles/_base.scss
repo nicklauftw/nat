@@ -1,8 +1,10 @@
 body {
-  background: url(../images/bg.jpg) no-repeat top 0 center fixed;
+  background: #fff url(../images/bg.jpg) no-repeat;
+  background-size: cover;
   font-family: "Helvetica", sans-serif;
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 1.4;
+  font-color: $base-font-color;
 }
 
 a { text-decoration: none; }

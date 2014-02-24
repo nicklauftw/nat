@@ -1,13 +1,134 @@
+// Variables, utility classes & mixins
+
+// Variables
+
+$base-font-color: #282b2e;
+
+$blue: #0084d9;
+
+$blue-darker: #00558b;
+
+$grey: #dbdbdb;
+
+$grey-darker: #cac9c9;
+
+$grey-darker-darker: #969696;
+
 // Utility classes
+
+.push-right { float: right; }
 
 .text-center { text-align: center; }
 
+.text-upper { text-transform: uppercase; }
+
+.text-strong { font-weight: bold; }
+
+.text-shadow { text-shadow: 1px 1px 1px #fff;}
+
+.a-img { display: block; }
+
+// Icons
+i.carret {
+  width: 10px;
+  height: 10px;
+  background: url('../images/sprite/carret.png') no-repeat top 0 right 0;
+}
+
+i.browse {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  background: url('../images/sprite/icon-browse.png') no-repeat top 3px right 0;
+}
+
+i.article {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  background: url('../images/sprite/icon-article.png') no-repeat bottom 0 right 0;
+}
+
+i.mail {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px 0 0;
+  background: url('../images/sprite/icon-mail.png') no-repeat bottom 0 right 0;
+}
+
+i.contest {
+  width: 12px;
+  height: 11px;
+  margin: 0 10px 0 0;
+  background: url('../images/sprite/icon-contest.png') no-repeat bottom 0 right 0;
+}
+
+i.vid {
+  width: 16px;
+  height: 12px;
+  margin: 0 10px 0;
+  background: url('../images/sprite/icon-video.png') no-repeat bottom 0 right 0;
+}
+
+span.btn-play {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  margin: auto;
+  background: url('../images/sprite/btn-play.png') no-repeat center center;
+}
+
+[class*=i-social] {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+.i-social-fb {
+  background: url('../images/sprite/social-fb.png') no-repeat center center;
+}
+
+.i-social-flickr {
+  background: url('../images/sprite/social-flickr.png') no-repeat center center;
+}
+
+.i-social-twitter {
+  background: url('../images/sprite/social-twitter.png') no-repeat center center;
+}
+
+.i-social-vimeo {
+  background: url('../images/sprite/social-vimeo.png') no-repeat center center;
+}
+
+.i-social-rss {
+  background: url('../images/sprite/social-rss.png') no-repeat center center;
+}
+
+// .row bottom border
+.border-bottom:after {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  background-color: #cccdcd;
+  width: 98%;
+  height: 1px;
+  content: "";
+}
+
 .list-inline > li {
   display: inline-block;
+  float: left;
   padding: 0 5px;
 }
 
 // Mixins
+
 @mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
   background-image: -webkit-gradient(linear, left $start-percent, left $end-percent, from($start-color), to($end-color)); // Safari 4+, Chrome 2+
   background-image: -webkit-linear-gradient(top, $start-color, $start-percent, $end-color, $end-percent); // Safari 5.1+, Chrome 10+

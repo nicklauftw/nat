@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: none;
+  @extend .text-upper;
+}
+
+.btn-blue {
+  background-color: $blue;
+  color: #fff !important;
+  transition: all 1s ease;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+  background-color: darken($blue, 10%);
+  transition: all 1s ease;
+}
