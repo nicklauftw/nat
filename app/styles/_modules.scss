@@ -49,6 +49,7 @@
   margin-bottom: 20px;
   height: 40px;
   font-size: 12px;
+  @include gradient-vertical(#fefefe, #d0d0d0, 0%, 100%);
   @extend .row;
   @extend .row-no-pad;
   @extend .text-strong;
@@ -68,7 +69,6 @@
     border-top: 1px solid #bdbdbd;
     border-bottom: 1px solid #bdbdbd;
     @extend .text-center;
-    @include gradient-vertical(#fefefe, #d0d0d0, 0%, 100%);
   }
   a:hover, a:focus {
     @include gradient-vertical(#e1e3e6, #bdbdbd, 0%, 100%);
