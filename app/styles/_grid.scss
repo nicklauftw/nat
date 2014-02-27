@@ -39,7 +39,7 @@ $max-col: 10;
 
 .col-3-10 { width: ( calc-width(3) - 5px ); }
 
-.col-5-10 { width: ( calc-width(5) - 5px ); }
+.col-5-10 { width: ( calc-width(5) ); }
 
 .col-7-10 { width: ( calc-width(7) - 5px ); }
 

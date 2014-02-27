@@ -48,7 +48,7 @@
 
         carousel.hover(function(e){
             clearInterval(carouselTimer);
-        }, function(ee){
+        }, function(e){
             carouselTimer = setInterval(
                 function () {
                 var i = carousel.find(carouselItem + '.active-slide').index();
@@ -64,10 +64,8 @@
                 carouselItems().eq(i + 1).addClass('active-slide');
 
                 carouselItemsThumbs().eq(i + 1).addClass('active-slide-thumb');
-            }, transitionTime +  timeBetweenSlides
-        );
+            }, transitionTime +  timeBetweenSlides );
         });
-
 
     };
 
